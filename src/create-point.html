@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/create-point.css" />
+
+    <link rel="stylesheet" href="./styles/responsive.css" />
+
+    <link rel="shortcut icon" href="#">
+
+    <title>Cadastrar uma loja</title>
+  </head>
+  <body>
+    <div id="page-create-point">
+      <header>
+        <h3>
+          YourStore
+          <i class="fas fa-store"></i>
+        </h3>
+
+        <a href="#">
+          <i class="fas fa-arrow-left"></i>
+          Voltar para a home</a
+        >
+      </header>
+
+      <form action=""> <!-- Criação da nossa tag form para a criação do furmlario-->
+
+        <h1>Cadastro da loja</h1>
+
+        <fieldset>
+          <legend>
+            <h2>dados da entidade</h2>
+          </legend>
+
+          <div class="field">
+            <label for="">Nome da entidade</label> <!--nome de cima das barras de submit-->
+            <input type="text" name="name">
+          </div>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="adress">Endereço</label>
+              <input type="text" name="adress">
+            </div>
+            <div class="field">
+              <label for="adress2">Numero/Complemento</label>
+              <input type="text" name="adress2">
+            </div>
+          </div>
+
+          <div class="field-group">
+
+            <div class="field">
+              <label for="state">Estado</label>
+              <select name="uf">
+                <option value="">Paraíba</option>
+              </select>
+              <input type="hidden" name="state">
+            </div>
+
+              <div class="field">
+                <label for="state">Cidade</label>
+                <select name="uf">
+                  <option value="">Rio Tinto</option>
+                </select>
+              </div>
+    
+          </div>
+        </fieldset>
+
+        <button type="submit">Cadastrar loja</button>
+      </form>
+
+    </div>
+
+    <script src="scripts/intro.js"></script>
+  </body>
+</html>
